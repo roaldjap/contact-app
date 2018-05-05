@@ -29,9 +29,9 @@ export default class ContactForm extends Component {
           </Button>
 
           <Button full danger onPress={ 
-            () => 
-            // this.props.navigation.state.params.remove()
-            console.log('Remove')
+            () => {
+              console.log(this.props)
+            }
           }>
             <Text>Delete</Text>
           </Button>

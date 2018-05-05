@@ -41,8 +41,10 @@ export default class Contact extends Component {
             return(
               
                 <ListItem button key={i} onPress={
-                    () => 
-                    this.props.navigation.navigate('ContactForm', {contact: item, remove: this.remove })
+                    () => {
+                      this.props.navigation.navigate('ContactForm', {contact: item, remove: this.remove })
+                    }
+                   
                 }>
 
                 <Text>{ item.name }</Text>
